@@ -2,7 +2,7 @@ const router = require("express").Router();
 const subtaskController = require("./subtask.controller")
 
 router.get("/",(req, res)=>{
-    res.send("Heluuuuu! Mah subtask ko api boleko!")
+    res.send("Heluuuuu! Mah subtask baata api boleko!")
 });
 
 router.post("/", async (req,res) => {
