@@ -25,11 +25,11 @@ router.put("/:id", async (req, res) => {
   const results = await todoController.updateById(req.params.id);
   res.json({ data: results });
 });
+
+// remove
 router.delete("/:id", async (req, res) => {
   const results = await todoController.remove(req.params.id);
   res.json({ data: results });
 });
-
-// remove
 
 module.exports = router;

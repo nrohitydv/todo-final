@@ -8,7 +8,16 @@ const create = (payload) => {
 
 const list = () => {
   // Complex aggression
-  return TodoModel.list(payload);
+  return TodoModel.aggregate([
+    {
+      $lookup: {
+        from: "subtasks",
+        localField: "_id",
+        foreignField: "todo_id",
+        as: "subtasks",
+      },
+    },
+  ]);
 };
 
 const getById = (id) => {
