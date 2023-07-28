@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const subTask = require("./router.api");
+const routesAPI = require("./router.api");
 
-router.use("/subtask/api", subTask);
+router.use("/api/v1", routesAPI);
 
 module.exports = router;
