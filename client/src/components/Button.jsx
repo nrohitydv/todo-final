@@ -1,9 +1,12 @@
 import { Button } from "react-bootstrap";
+import Home from "./Nav";
 
 function ButtonComponent() {
   return (
     <>
-      <Button variant="primary">Primary</Button>{" "}
+      <Button variant="primary" onClick={<Home />}>
+        Primary
+      </Button>{" "}
     </>
   );
 }
