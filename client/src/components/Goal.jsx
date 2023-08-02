@@ -11,4 +11,4 @@ export default function Goal(props) {
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Goal isGoal={false} />);
+root.render(<Goal isGoal={true} />);
