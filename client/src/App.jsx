@@ -10,7 +10,7 @@ function App() {
     <>
       <Home />
       <ButtonComponent />
-      <Garage cars={["audi", "bmw"]} />
+      <Garage />
     </>
   );
 }

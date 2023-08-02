@@ -1,9 +1,15 @@
-export default function Garage(props) {
-  const cars = props.cars;
+import Car from "./Car";
+
+export default function Garage() {
+  const cars = ["Ford", "BMW", "Audi"];
   return (
     <>
-      <h1>Garage</h1>
-      {cars.length > 0 && <h2>You have {cars.length} cars in your garage.</h2>}
+      <h1>Who lives in my garage?</h1>
+      <ul>
+        {cars.map((car) => (
+          <Car brand={car} />
+        ))}
+      </ul>
     </>
   );
 }
