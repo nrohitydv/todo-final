@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Button } from "react-bootstrap";
 export default function Ford() {
   const [car, setCar] = useState({
     brand: "Ford",
@@ -21,9 +21,9 @@ export default function Ford() {
       <p>
         It is a {car.color} {car.model} from {car.year}.
       </p>
-      <button type="button" onClick={updateColor}>
+      <Button type="button" variant="danger" onClick={updateColor}>
         Change Color
-      </button>
+      </Button>
     </>
   );
 }
