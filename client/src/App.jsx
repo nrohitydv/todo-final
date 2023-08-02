@@ -5,6 +5,7 @@ import ButtonComponent from "./components/Button";
 import Home from "./components/Nav";
 import Garage from "./learning/Garage";
 import FavoriteColor from "./learning/FavoriteColor";
+import Ford from "./learning/Ford";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <ButtonComponent />
       <Garage />
       <FavoriteColor />
+      <Ford />
     </>
   );
 }
